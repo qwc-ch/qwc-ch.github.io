@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search> 
+  
+  
+    
+    <entry>
+      <title>演示</title>
+      <link href="/2025/11/09/%E6%BC%94%E7%A4%BA/"/>
+      <url>/2025/11/09/%E6%BC%94%E7%A4%BA/</url>
+      
+        <content type="html"><![CDATA[<p>我们是美好的</p>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Termux</title>
+      <link href="/2025/11/08/Termux/"/>
+      <url>/2025/11/08/Termux/</url>
+      
+        <content type="html"><![CDATA[<h1 id="什么是-Termux？"><a href="#什么是-Termux？" class="headerlink" title="什么是 Termux？"></a>什么是 Termux？</h1><p>Termux 是一款强大的 Android 终端模拟器和 Linux 环境应用。它无需 root 权限，直接在您的安卓设备上提供了一个完整的 Linux 命令行环境。这意味着您可以在手机或平板上运行许多在 Linux 系统中常见的命令、工具和软件包，甚至可以运行一些图形界面应用。</p><h2 id="核心特点"><a href="#核心特点" class="headerlink" title="核心特点"></a>核心特点</h2><ul><li><strong>无需 Root</strong>：开箱即用，降低了使用门槛。</li><li><strong>独立环境</strong>：它在一个隔离的目录中运行，不会干扰您的安卓系统。</li><li><strong>包管理</strong>：拥有自己的包管理器（pkg，基于 APT），可以轻松安装成千上万的软件包。</li><li><strong>功能强大</strong>：支持 Python、PHP、Node.js、Git、GCC、Vim、Nano、SSH 等大量开发工具和服务器软件。</li></ul><h2 id="Termux-能用来做什么？（常见用途）"><a href="#Termux-能用来做什么？（常见用途）" class="headerlink" title="Termux 能用来做什么？（常见用途）"></a>Termux 能用来做什么？（常见用途）</h2><p>Termux 的玩法极其丰富，以下是一些典型的应用场景：</p><h3 id="1-编程与开发"><a href="#1-编程与开发" class="headerlink" title="1. 编程与开发"></a>1. 编程与开发</h3><ul><li><strong>移动代码编辑器</strong>：安装 Vim 或 Nano，配合 Python、Node.js 或 GCC（C&#x2F;C++），随时随地编写和运行代码。</li><li><strong>版本控制</strong>：使用 Git 来管理您的项目代码，与 GitHub 或 GitLab 同步。</li><li><strong>Web 开发</strong>：安装 Nginx 或 Lighttpd 作为本地 Web 服务器，搭配 PHP 或 Python（Django&#x2F;Flask）进行本地测试。</li></ul><h3 id="2-网络安全与渗透测试"><a href="#2-网络安全与渗透测试" class="headerlink" title="2. 网络安全与渗透测试"></a>2. 网络安全与渗透测试</h3><ul><li>Termux 是移动安全研究人员的利器。可以安装强大的工具集，如：<ul><li><code>nmap</code>：网络扫描工具。</li><li><code>sqlmap</code>：自动化 SQL 注入工具。</li><li><code>metasploit</code>：著名的渗透测试框架。</li><li><code>hydra</code>：网络登录破解工具。</li></ul></li><li><strong>重要声明</strong>：请仅在您自己的设备或获得明确授权的环境中使用这些工具。未经授权的攻击是违法的。</li></ul><h3 id="3-系统管理与远程连接"><a href="#3-系统管理与远程连接" class="headerlink" title="3. 系统管理与远程连接"></a>3. 系统管理与远程连接</h3><ul><li><strong>SSH 客户端</strong>：使用 Termux 通过 SSH 远程连接到您的服务器或树莓派。</li><li><strong>SSH 服务器</strong>：在 Termux 内启动 SSH 服务，让您可以从电脑远程访问您的手机终端。</li><li><strong>文件操作</strong>：执行强大的 Linux 文件管理命令（<code>find</code>、<code>grep</code>、<code>rsync</code> 等），批量处理手机文件。</li></ul><h3 id="4-实用工具与娱乐"><a href="#4-实用工具与娱乐" class="headerlink" title="4. 实用工具与娱乐"></a>4. 实用工具与娱乐</h3><ul><li><strong>文本处理</strong>：使用 <code>curl</code> 或 <code>wget</code> 下载网络资源，用 <code>grep</code>、<code>awk</code>、<code>sed</code> 处理文本数据。</li><li><strong>运行机器人</strong>：在某些聊天应用（如 Telegram）上运行机器人。</li><li><strong>游戏</strong>：编译并运行一些经典的命令行游戏，如 <code>nethack</code>、<code>cmatrix</code>（黑客帝国代码雨效果）。</li></ul><h2 id="Termux-基础入门"><a href="#Termux-基础入门" class="headerlink" title="Termux 基础入门"></a>Termux 基础入门</h2><h3 id="安装与设置"><a href="#安装与设置" class="headerlink" title="安装与设置"></a>安装与设置</h3><ol><li><strong>来源</strong>：由于 Google Play 上的 Termux 版本已无人维护，建议从 F-Droid 应用商店下载官方最新版。<br>2.<strong>换清华源</strong>:</li></ol><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">sed -i &#x27;s@^\(deb.*stable main\)$@#\1\ndeb https://mirrors.tuna.tsinghua.edu.cn/termux/termux-packages-24 stable main@&#x27; $PREFIX/etc/apt/sources.list</span><br><span class="line"></span><br><span class="line">sed -i &#x27;s@^\(deb.*games stable\)$@#\1\ndeb https://mirrors.tuna.tsinghua.edu.cn/termux/game-packages-24 games stable@&#x27; $PREFIX/etc/apt/sources.list.d/game.list</span><br><span class="line"></span><br><span class="line">sed -i &#x27;s@^\(deb.*science stable\)$@#\1\ndeb https://mirrors.tuna.tsinghua.edu.cn/termux/science-packages-24 science stable@&#x27; $PREFIX/etc/apt/sources.list.d/science.list</span><br></pre></td></tr></table></figure><ol start="3"><li><strong>基本命令更新</strong>：更新所有列表和软件</li></ol><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pkg update &amp;&amp; pkg upgrade</span><br></pre></td></tr></table></figure><ol start="4"><li><strong>安装软件</strong>：</li></ol><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pkg install [包名]</span><br></pre></td></tr></table></figure><h1 id="常用基础命令"><a href="#常用基础命令" class="headerlink" title="常用基础命令"></a>常用基础命令</h1><ul><li><code>pkg update/upgrade</code>：更新软件包列表和升级软件。</li><li><code>pkg search [关键词]</code>：搜索软件包。</li><li><code>pkg install [包名]</code>：安装软件包。</li><li><code>pkg uninstall [包名]</code>：卸载软件包。</li><li><code>cd [目录路径]</code>：切换目录。</li><li><code>ls</code>：列出当前目录下的文件和文件夹。</li><li><code>cp/mv/rm</code>：复制&#x2F;移动&#x2F;删除文件或目录。</li><li><code>mkdir [目录名]</code>：创建新目录。</li><li><code>cat [文件名]</code>：查看文件内容。</li><li><code>python</code> 或 <code>node</code>：直接进入 Python 或 Node.js 交互式环境。</li></ul><h1 id="重要提示与技巧"><a href="#重要提示与技巧" class="headerlink" title="重要提示与技巧"></a>重要提示与技巧</h1><ul><li><p><strong>存储权限</strong>：默认情况下，Termux 只能访问自己的目录（<code>~/</code> 或 <code>/data/data/com.termux/files/home</code>）。如果需要访问手机公共存储，需要运行 <code>termux-setup-storage</code> 命令来授权，之后会在主目录生成一个 <code>storage</code> 文件夹链接到您的手机存储。</p></li><li><p><strong>后台运行</strong>：使用 <code>&lt;Ctrl&gt;+Z</code> 可以将当前任务挂起到后台，使用 <code>fg</code> 可以将其调回前台。</p></li><li><p><strong>会话保持</strong>：默认情况下，锁屏或切换应用后 Termux 进程可能会被系统杀死。可以考虑使用 Termux:Boot 插件来保持特定脚本在开机时运行。</p></li><li><p><strong>社区支持</strong>：如果遇到问题，可以查阅官方 Wiki 或相关的 GitHub 页面，那里有非常详尽的文档和社区支持。</p><p> <a href="https://wiki.termux.com/">官方 Wiki</a><br> <a href="https://github.com/termux/termux-app#github">GitHub 链接</a></p></li></ul>]]></content>
+      
+      
+      <categories>
+          
+          <category> 技术指南 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Termux </tag>
+            
+            <tag> Android </tag>
+            
+            <tag> Linux </tag>
+            
+            <tag> 命令行 </tag>
+            
+            <tag> 终端 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+  
+  
+</search>
