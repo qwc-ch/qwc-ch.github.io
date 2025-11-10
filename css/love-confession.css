@@ -2,70 +2,77 @@
 .love-confession-container {
     margin: 0;
     padding: 0;
-    height: 100vh;
+    min-height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
     background-color: #f1d5da;
     text-align: center;
     font-family: Arial, sans-serif;
-    overflow: hidden;
+    overflow-x: hidden;
 }
 
 .love-confession-container .container {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    position: relative;
+    padding: 20px;
     z-index: 10;
 }
 
 .love-confession-container #mainImage {
     width: 200px;
+    height: 200px;
     transition: all 0.3s ease;
     display: block;
     margin: 0 auto;
+    object-fit: contain;
 }
 
 .love-confession-container h1 {
     font-size: 28px;
     color: #68495b;
     margin: 20px 0;
+    transition: all 0.3s ease;
 }
 
 .love-confession-container .buttons {
     margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
 }
 
 .love-confession-container button {
     font-size: 18px;
-    padding: 10px 20px;
+    padding: 12px 24px;
     border: none;
-    border-radius: 5px;
+    border-radius: 25px;
     cursor: pointer;
-    margin: 10px;
     transition: all 0.3s ease;
-    min-width: 80px;
+    min-width: 100px;
+    font-weight: bold;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 }
 
 .love-confession-container #yes {
-    background-color: #d4818e;
+    background: linear-gradient(135deg, #d4818e, #c76978);
     color: white;
 }
 
 .love-confession-container #yes:hover {
-    background-color: #c76978;
-    transform: scale(1.05);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.15);
 }
 
 .love-confession-container #no {
-    background-color: #6784b1;
+    background: linear-gradient(135deg, #6784b1, #5a74a0);
     color: white;
     position: relative;
 }
 
 .love-confession-container #no:hover {
-    background-color: #5a74a0;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.15);
 }
 
 .love-confession-container .yes-screen {
@@ -74,57 +81,112 @@
     left: 0;
     width: 100vw;
     height: 100vh;
-    background-color: #ffdae0;
+    background: linear-gradient(135deg, #ffdae0, #ffc0cb);
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    z-index: 100;
+    z-index: 1000;
+    animation: fadeIn 0.5s ease;
 }
 
 .love-confession-container .yes-text {
-    font-size: 36px;
+    font-size: 42px;
     color: #d4818e;
-    margin-bottom: 30px;
-    animation: pulse 1.5s infinite;
+    margin-bottom: 40px;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+    animation: pulse 1.5s infinite, float 3s ease-in-out infinite;
 }
 
 .love-confession-container .yes-image {
-    width: 250px;
-    animation: bounce 2s infinite;
+    width: 280px;
+    height: 280px;
+    object-fit: contain;
+    animation: bounce 2s infinite, rotate 10s linear infinite;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
 }
 
 @keyframes pulse {
     0% { transform: scale(1); }
-    50% { transform: scale(1.1); }
+    50% { transform: scale(1.05); }
     100% { transform: scale(1); }
 }
 
 @keyframes bounce {
     0%, 100% { transform: translateY(0); }
-    50% { transform: translateY(-20px); }
+    50% { transform: translateY(-25px); }
+}
+
+@keyframes float {
+    0%, 100% { transform: translateY(0) rotate(0deg); }
+    33% { transform: translateY(-10px) rotate(1deg); }
+    66% { transform: translateY(5px) rotate(-1deg); }
+}
+
+@keyframes rotate {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
 }
 
 /* 移动端适配 */
 @media (max-width: 768px) {
+    .love-confession-container .container {
+        padding: 15px;
+    }
+    
     .love-confession-container #mainImage {
         width: 150px;
+        height: 150px;
     }
     
     .love-confession-container h1 {
-        font-size: 24px;
+        font-size: 22px;
+        margin: 15px 0;
     }
     
     .love-confession-container button {
         font-size: 16px;
-        padding: 8px 16px;
+        padding: 10px 20px;
+        min-width: 80px;
+    }
+    
+    .love-confession-container .buttons {
+        gap: 10px;
     }
     
     .love-confession-container .yes-text {
         font-size: 28px;
+        margin-bottom: 30px;
+        text-align: center;
+        padding: 0 20px;
     }
     
     .love-confession-container .yes-image {
         width: 200px;
+        height: 200px;
+    }
+}
+
+@media (max-width: 480px) {
+    .love-confession-container #mainImage {
+        width: 120px;
+        height: 120px;
+    }
+    
+    .love-confession-container h1 {
+        font-size: 20px;
+    }
+    
+    .love-confession-container .yes-text {
+        font-size: 24px;
+    }
+    
+    .love-confession-container .yes-image {
+        width: 180px;
+        height: 180px;
     }
 }
