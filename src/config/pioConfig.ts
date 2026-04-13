@@ -51,6 +51,7 @@ export const spineModelConfig: SpineModelConfig = {
 		],
 		// 点击时随机显示的文字消息
 		clickMessages: [
+		  "你好呀!欢迎来到我的博客。"
 			"你好呀！我是流萤~",
 			"今天也要加油哦！✨",
 			"想要一起去看星空吗？🌟",
