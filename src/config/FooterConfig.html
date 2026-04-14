@@ -1,1 +1,46 @@
-这里是HTML注入示例，你可以在这个文件中添加自定义的HTML内容
+<!-- 访问量统计显示（数据来自 Umami） -->
+<div style="text-align: center; font-size: 14px; color: #666; margin-top: 10px;">
+  今日访问：<span id="umami-today">-</span> &nbsp;|&nbsp;
+  本月访问：<span id="umami-month">-</span> &nbsp;|&nbsp;
+  总访问量：<span id="umami-total">-</span>
+</div>
+
+<script>
+  (function() {
+    // 你的 Cloudflare Worker 地址
+    const WORKER_URL = 'https://worker.zzzzzzxx2022.workers.dev';
+
+    // 通用请求函数
+    async function fetchPeriod(period) {
+      try {
+        const res = await fetch(`${WORKER_URL}?period=${period}`);
+        if (!res.ok) throw new Error(`HTTP ${res.status}`);
+        const data = await res.json();
+        return data.pageviews ?? 0;
+      } catch (err) {
+        console.error(`获取${period}数据失败:`, err);
+        return null;
+      }
+    }
+
+    // 加载全部三个数据
+    async function loadStats() {
+      const [today, month, total] = await Promise.all([
+        fetchPeriod('today'),
+        fetchPeriod('month'),
+        fetchPeriod('all')
+      ]);
+
+      if (today !== null) document.getElementById('umami-today').innerText = today;
+      if (month !== null) document.getElementById('umami-month').innerText = month;
+      if (total !== null) document.getElementById('umami-total').innerText = total;
+    }
+
+    // 确保 DOM 加载完成后再执行
+    if (document.readyState === 'loading') {
+      document.addEventListener('DOMContentLoaded', loadStats);
+    } else {
+      loadStats();
+    }
+  })();
+</script>
