@@ -1,46 +1,42 @@
-<!-- 访问量统计显示（数据来自 Umami） -->
+<!-- 不蒜子统计显示 - 完整版 -->
 <div style="text-align: center; font-size: 14px; color: #666; margin-top: 10px;">
-  今日访问：<span id="umami-today">-</span> &nbsp;|&nbsp;
-  本月访问：<span id="umami-month">-</span> &nbsp;|&nbsp;
-  总访问量：<span id="umami-total">-</span>
+  本站总访问量：<span id="busuanzi_value_site_pv">-</span> 次
 </div>
 
+<!-- 加载不蒜子核心脚本（异步） -->
+<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.min.js"></script>
+
+<!-- 确保不蒜子在 Astro 页面切换后也能刷新 -->
 <script>
   (function() {
-    // 你的 Cloudflare Worker 地址
-    const WORKER_URL = 'https://worker.zzzzzzxx2022.workers.dev';
-
-    // 通用请求函数
-    async function fetchPeriod(period) {
-      try {
-        const res = await fetch(`${WORKER_URL}?period=${period}`);
-        if (!res.ok) throw new Error(`HTTP ${res.status}`);
-        const data = await res.json();
-        return data.pageviews ?? 0;
-      } catch (err) {
-        console.error(`获取${period}数据失败:`, err);
-        return null;
+    // 手动刷新不蒜子显示的函数
+    function refreshBusuanzi() {
+      if (typeof window.busuanzi !== 'undefined') {
+        // 不蒜子暴露的 fetch 方法会重新获取数据并更新页面
+        window.busuanzi.fetch();
+      } else {
+        // 如果脚本还没加载，等待它加载完成后再尝试
+        var checkInterval = setInterval(function() {
+          if (typeof window.busuanzi !== 'undefined') {
+            clearInterval(checkInterval);
+            window.busuanzi.fetch();
+          }
+        }, 200);
+        // 5秒后停止检查，避免无限循环
+        setTimeout(function() { clearInterval(checkInterval); }, 5000);
       }
     }
 
-    // 加载全部三个数据
-    async function loadStats() {
-      const [today, month, total] = await Promise.all([
-        fetchPeriod('today'),
-        fetchPeriod('month'),
-        fetchPeriod('all')
-      ]);
-
-      if (today !== null) document.getElementById('umami-today').innerText = today;
-      if (month !== null) document.getElementById('umami-month').innerText = month;
-      if (total !== null) document.getElementById('umami-total').innerText = total;
+    // 监听 Astro 的页面切换事件（如果存在）
+    if (document.addEventListener) {
+      document.addEventListener('astro:page-load', refreshBusuanzi);
     }
 
-    // 确保 DOM 加载完成后再执行
+    // 页面初始加载时刷新一次（确保首次显示）
     if (document.readyState === 'loading') {
-      document.addEventListener('DOMContentLoaded', loadStats);
+      document.addEventListener('DOMContentLoaded', refreshBusuanzi);
     } else {
-      loadStats();
+      refreshBusuanzi();
     }
   })();
 </script>
