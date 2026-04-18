@@ -1,0 +1,67 @@
+import type { CommentConfig } from "../types/config";
+
+export const commentConfig: CommentConfig = {
+	// 评论系统类型: none, twikoo, waline, giscus, disqus, artalk，默认为none，即不启用评论系统
+	type: "giscus",
+
+	//twikoo评论系统配置，版本1.7.4
+	twikoo: {
+		envId: "https://twikoo.vercel.app",
+		// 设置 Twikoo 评论系统语言
+		lang: "zh-CN",
+		// 是否启用文章访问量统计功能
+		visitorCount: true,
+	},
+
+	//waline评论系统配置
+	waline: {
+		// waline 后端服务地址
+		serverURL: "https://waline.vercel.app",
+		// 设置 Waline 评论系统语言
+		lang: "zh-CN",
+		// 设置 Waline 评论系统表情地址
+		emoji: [
+			"https://unpkg.com/@waline/emojis@1.4.0/weibo",
+			"https://unpkg.com/@waline/emojis@1.4.0/bilibili",
+			"https://unpkg.com/@waline/emojis@1.4.0/bmoji",
+		],
+		// 评论登录模式。可选值如下：
+		//   'enable'   —— 默认，允许访客匿名评论和用第三方 OAuth 登录评论，兼容性最佳。
+		//   'force'    —— 强制必须登录后才能评论，适合严格社区，关闭匿名评论。
+		//   'disable'  —— 禁止所有登录和 OAuth，仅允许匿名评论（填写昵称/邮箱），适用于极简留言。
+		login: "enable",
+		// 是否启用文章访问量统计功能
+		visitorCount: true,
+	},
+
+	// artalk评论系统配置
+	artalk: {
+		// artalk后端程序 API 地址
+		server: "https://artalk.example.com/",
+		// 设置 Artalk 语言
+		locale: "zh-CN",
+		// 是否启用文章访问量统计功能
+		visitorCount: true,
+	},
+
+	//giscus评论系统配置
+  giscus: {
+  repo: "qwc-ch/Blog-comment-data-storage",
+  repoId: "R_kgDOQSETtQ",
+  category: "Announcements",
+  categoryId: "DIC_kwDOQSETtc4CxmBz",
+  mapping: "pathname",   // 注意从 title 改为 pathname
+  strict: "0",
+  reactionsEnabled: "1",
+  emitMetadata: "0",     // 关闭元数据发送
+  inputPosition: "bottom",
+  lang: "zh-CN",
+  loading: "lazy",       // 或保持 "lazy"，效果接近 async
+},
+
+	//disqus评论系统配置
+	disqus: {
+		// 获取 Disqus 评论系统
+		shortname: "firefly",
+	},
+};
