@@ -1,8 +1,11 @@
 ---
-title: 网站统计
+title: 站点统计
 published: 1999-01-01
-description: 查看本站访问量和流量来源
-slug: analytics
+description: 我的博客访问统计
+image: ./images/firefly3.avif
+tags: [博客, 访问量]
+category: 博客
+draft: false
 ---
 
 # 📊 网站统计

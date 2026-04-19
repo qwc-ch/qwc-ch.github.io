@@ -1,6 +1,6 @@
 # 关于我 / About Me
 
-你好！我是 **夏叶** ，一个在数字世界中默默无闻的一片叶子。
+你好！我是 **年华** ，一个在数字世界中默默无闻的一片叶子。
 
 ## 🛠️ 关于本站
 
@@ -28,9 +28,8 @@
 
 如果你想和我交流技术问题，分享有趣的想法，或者只是想打个招呼，欢迎通过以下方式联系我：
 
-- 💻 **GitHub**: [CuteLeaf](https://github.com/CuteLeaf)
-- ✉️ **Email**: [xiaye@msn.com](mailto:xiaye@msn.com)
-- 🐧 **QQ交流群：[1087127207](https://qm.qq.com/q/ZGsFa8qX2G)**
+- 💻 **GitHub**: [CuteLeaf](https://github.com/qwc-ch)
+- ✉️ **Email**: [xiaye@msn.com](mailto:zzzzzzxx2022@163.com)
 
 ---
 
