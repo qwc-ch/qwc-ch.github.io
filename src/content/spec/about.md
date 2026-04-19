@@ -28,8 +28,8 @@
 
 如果你想和我交流技术问题，分享有趣的想法，或者只是想打个招呼，欢迎通过以下方式联系我：
 
-- 💻 **GitHub**: [CuteLeaf](https://github.com/qwc-ch)
-- ✉️ **Email**: [xiaye@msn.com](mailto:zzzzzzxx2022@163.com)
+- 💻 **GitHub**: [qwc-ch](https://github.com/qwc-ch)
+- ✉️ **Email**: [zzzzzzxx2022](mailto:zzzzzzxx2022@163.com)
 
 ---
 
