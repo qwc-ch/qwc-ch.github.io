@@ -31,6 +31,7 @@ wget -qO- https://raw.githubusercontent.com/zhende1113/Antlia/refs/heads/main/Sc
 > ```
 > 再正常用命令启动。
 > ```bash
+> cd AstrBot
 > uv run main.py
 > ```
 > 如果uv下载依赖时，遇到网络问题，可以设置镜像源来解决。
