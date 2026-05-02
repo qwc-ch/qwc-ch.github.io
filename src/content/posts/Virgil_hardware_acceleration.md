@@ -1,5 +1,5 @@
 ---
-title: 
+title: f
 published: 2026-05-02
 description: ''
 image: ''
