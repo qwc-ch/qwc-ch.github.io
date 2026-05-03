@@ -50,6 +50,16 @@ export const friendsConfig: FriendLink[] = [
 		weight: 8,
 		enabled: true,
 	},
+	{
+	  title: "番茄主理人",
+		imgurl:
+			"https://q1.qlogo.cn/g?b=qq&nk=20447289&s=640",
+		desc: "坐而言不如起而行.",
+		siteurl: "番茄主理人",
+		tags: ["Blog"],
+		weight: 7, // 权重，数字越大排序越靠前
+		enabled: true, // 是否启用
+	}
 ];
 
 // 获取启用的友链并进行排序
