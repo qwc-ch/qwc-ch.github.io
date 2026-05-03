@@ -53,7 +53,7 @@ export const friendsConfig: FriendLink[] = [
 	{
 	  title: "fqzlr",
 		imgurl:
-			"https://q1.qlogo.cn/g ?b=qq&nk=20447289&s=640",
+			"https://q1.qlogo.cn/g?b=qq&nk=20447289&s=640",
 		desc: "坐姿不如起而行。",
 		siteurl: "https://fqzlr.com/",
 		tags: ["Blog"],
