@@ -39,7 +39,7 @@ import { plantumlConfig } from "./src/config";
 
 // https://astro.build/config
 export default defineConfig({
-	site: siteConfig.site_url,
+	site: "https://qwe-n.github.io",
 	
 	base: "/",
 	trailingSlash: "always",
