@@ -39,7 +39,7 @@ import { plantumlConfig } from "./src/config";
 
 // https://astro.build/config
 export default defineConfig({
-	site: site,
+	site: siteConfig.site_url,
 	
 	base: "/",
 	trailingSlash: "always",
