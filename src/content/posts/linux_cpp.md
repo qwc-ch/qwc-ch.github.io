@@ -1,5 +1,5 @@
 ---
-title: Linux(Debian系)上C++开发环境搭建
+title: Linux(Debian系)上搭建C++开发环境
 published: 2026-05-02
 description: '基于 VS Code、Clang、CMake、Ninja 和 vcpkg的C++开发环境。'
 image: ''
