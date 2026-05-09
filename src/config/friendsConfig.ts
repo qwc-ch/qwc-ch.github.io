@@ -29,19 +29,29 @@ export const friendsConfig: FriendLink[] = [
 		desc: "飞萤之火自无梦的长夜亮起，绽放在终竟的明天。",
 		siteurl: "https://blog.cuteleaf.cn",
 		tags: ["Blog"],
-		weight: 10, // 权重，数字越大排序越靠前
-		enabled: true, // 是否启用
+		weight: 10,
+		enabled: true,
+		issue_id: 0,
 	},
-	
 	{
-	  title: "fqzlr",
-		imgurl:
-			"https://q1.qlogo.cn/g?b=qq&nk=20447289&s=640",
+		title: "fqzlr",
+		imgurl: "https://q1.qlogo.cn/g?b=qq&nk=20447289&s=640",
 		desc: "坐姿不如起而行。",
 		siteurl: "https://fqzlr.com/",
 		tags: ["Blog"],
-		weight: 7, // 权重，数字越大排序越靠前
-		enabled: true, // 是否启用
+		weight: 7,
+		enabled: true,
+		issue_id: 0,
+	},
+	{
+		title: "年华",
+		imgurl: "https://q1.qlogo.cn/g?b=qq&nk=1323860289&s=640",
+		desc: "分享生活和技术。",
+		siteurl: "https://blog.520781.xyz/",
+		tags: ["Blog"],
+		weight: 10,
+		enabled: true,
+		issue_id: 19,
 	},
 ];
 
