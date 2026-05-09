@@ -13,7 +13,7 @@ export const siteConfig: SiteConfig = {
 	subtitle: "年华的小破站",
 
 	// 站点 URL
-	site_url: "https://cyrene.ccwu.cc/",
+	site_url: "https://blog.520781.xyz",
 
 	// 站点描述
 	description:
