@@ -72,7 +72,7 @@ const getDynamicNavBarConfig = (): NavBarConfig => {
 			},
 			{
 				name: "E-mail",
-				url: "zzzzzzxx2022@163.com",
+				url: "mailto:zzzzzzxx2022@163.com",
 				external: true,
 				icon: "fa7-regular:envelope",
 			},
