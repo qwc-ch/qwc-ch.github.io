@@ -8,7 +8,7 @@
 > 
 > ![Node.js >= 22](https://img.shields.io/badge/node.js-%3E%3D22-brightgreen) 
 ![pnpm >= 9](https://img.shields.io/badge/pnpm-%3E%3D9-blue)
-![Astro](https://img.shields.io/badge/Astro-6.1.5-orange)
+![Astro](https://img.shields.io/badge/Astro-6.3.1-orange)
 ![TypeScript](https://img.shields.io/badge/TypeScript-5.9.2-blue)
 >
 > [![Stars](https://img.shields.io/github/stars/CuteLeaf/Firefly?style=social)](https://github.com/CuteLeaf/Firefly/stargazers)
@@ -81,7 +81,7 @@
 - [x] **Настройка подвала** - Внедрение HTML-контента, полная настраиваемость
 - [x] **Режим света и тьмы** - Поддержка светлого/темного/системного режимов
 - [x] **Настройка навигации** - Логотип, заголовок, ссылки полностью настраиваются
-- [x] **Переключение режимов обоев** - Баннерные обои, полноэкранные обои, однотонный фон
+- [x] **Переключение режимов обоев** - Баннерные обои, полноэкранные обои, полноэкранные прозрачные обои, однотонный фон
 - [x] **Настройка цвета темы** - Регулировка оттенка на 360°
 
 
@@ -179,7 +179,7 @@ src/
 │   ├── footerConfig.ts       # Конфигурация подвала
 │   ├── FooterConfig.html     # HTML-контент подвала
 │   ├── expressiveCodeConfig.ts # Конфигурация подсветки кода
-│   ├── sakuraConfig.ts       # Конфигурация эффекта сакуры
+│   ├── effectsConfig.ts      # Конфигурация анимационных эффектов (сакура и др.)
 │   ├── fontConfig.ts         # Конфигурация шрифтов
 │   ├── sidebarConfig.ts      # Конфигурация макета боковой панели
 │   ├── navBarConfig.ts       # Конфигурация навигационной панели

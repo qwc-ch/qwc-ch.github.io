@@ -8,7 +8,7 @@
 > 
 > ![Node.js >= 22](https://img.shields.io/badge/node.js-%3E%3D22-brightgreen) 
 ![pnpm >= 9](https://img.shields.io/badge/pnpm-%3E%3D9-blue)
-![Astro](https://img.shields.io/badge/Astro-6.1.5-orange)
+![Astro](https://img.shields.io/badge/Astro-6.3.1-orange)
 ![TypeScript](https://img.shields.io/badge/TypeScript-5.9.2-blue)
 >
 > [![Stars](https://img.shields.io/github/stars/CuteLeaf/Firefly?style=social)](https://github.com/CuteLeaf/Firefly/stargazers)
@@ -81,7 +81,7 @@
 - [x] **页脚配置** - HTML 内容注入，完全自定义
 - [x] **亮暗色模式** - 支持亮色/暗色/跟随系统三种模式
 - [x] **导航栏自定义** - Logo、标题、链接全面自定义
-- [x] **壁纸模式切换** - 横幅壁纸、全屏透明壁纸、纯色背景
+- [x] **壁纸模式切换** - 横幅壁纸、全屏壁纸、全屏透明壁纸、纯色背景
 - [x] **主题色自定义** - 360° 色相调节
 
 如果你有好用的功能和优化，请提交 [Pull Request](https://github.com/CuteLeaf/Firefly/pulls)
@@ -177,7 +177,7 @@ src/
 │   ├── footerConfig.ts       # 页脚配置
 │   ├── FooterConfig.html     # 页脚HTML内容
 │   ├── expressiveCodeConfig.ts # 代码高亮配置
-│   ├── sakuraConfig.ts       # 樱花特效配置
+│   ├── effectsConfig.ts      # 动画特效配置（樱花等）
 │   ├── fontConfig.ts         # 字体配置
 │   ├── sidebarConfig.ts      # 侧边栏布局配置
 │   ├── navBarConfig.ts       # 导航栏配置

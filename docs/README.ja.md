@@ -8,7 +8,7 @@
 > 
 > ![Node.js >= 22](https://img.shields.io/badge/node.js-%3E%3D22-brightgreen) 
 ![pnpm >= 9](https://img.shields.io/badge/pnpm-%3E%3D9-blue)
-![Astro](https://img.shields.io/badge/Astro-6.1.5-orange)
+![Astro](https://img.shields.io/badge/Astro-6.3.1-orange)
 ![TypeScript](https://img.shields.io/badge/TypeScript-5.9.2-blue)
 >
 > [![Stars](https://img.shields.io/github/stars/CuteLeaf/Firefly?style=social)](https://github.com/CuteLeaf/Firefly/stargazers)
@@ -81,7 +81,7 @@
 - [x] **フッター設定** - HTMLコンテンツ注入、完全カスタマイズ可能
 - [x] **ライト/ダークモード** - ライト/ダーク/システム追従の3モードをサポート
 - [x] **ナビゲーションバーのカスタマイズ** - ロゴ、タイトル、リンクを完全カスタマイズ
-- [x] **壁紙モード切り替え** - バナー壁紙、フルスクリーン壁紙、単色背景
+- [x] **壁紙モード切り替え** - バナー壁紙、フルスクリーン壁紙、フルスクリーン透明壁紙、単色背景
 - [x] **テーマカラーのカスタマイズ** - 360°色相調整
 
 
@@ -178,7 +178,7 @@ src/
 │   ├── footerConfig.ts       # フッター設定
 │   ├── FooterConfig.html     # フッターHTMLコンテンツ
 │   ├── expressiveCodeConfig.ts # コードハイライト設定
-│   ├── sakuraConfig.ts       # 桜エフェクト設定
+│   ├── effectsConfig.ts      # アニメーションエフェクト設定（桜など）
 │   ├── fontConfig.ts         # フォント設定
 │   ├── sidebarConfig.ts      # サイドバーレイアウト設定
 │   ├── navBarConfig.ts       # ナビゲーションバー設定
