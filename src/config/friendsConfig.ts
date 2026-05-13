@@ -31,7 +31,6 @@ export const friendsConfig: FriendLink[] = [
 		tags: ["Blog"],
 		weight: 10,
 		enabled: true,
-		issue_id: 0,
 	},
 	{
 		title: "fqzlr",
@@ -41,7 +40,6 @@ export const friendsConfig: FriendLink[] = [
 		tags: ["Blog"],
 		weight: 7,
 		enabled: true,
-		issue_id: 0,
 	},
 	{
 		title: "年华",
@@ -51,7 +49,6 @@ export const friendsConfig: FriendLink[] = [
 		tags: ["Blog"],
 		weight: 100,
 		enabled: true,
-		issue_id: 19,
 	},
 		{
 		title: "团子和蛋糕",
@@ -61,7 +58,6 @@ export const friendsConfig: FriendLink[] = [
 		tags: ["Blog"],
 		weight: 10,
 		enabled: true,
-		issue_id: 19,
 	},
 			{
 		title: "UpXuu",
@@ -71,7 +67,6 @@ export const friendsConfig: FriendLink[] = [
 		tags: ["Blog"],
 		weight: 10,
 		enabled: true,
-		issue_id: 20,
 	},
 ];
 
