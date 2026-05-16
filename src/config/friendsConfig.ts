@@ -77,6 +77,15 @@ export const friendsConfig: FriendLink[] = [
 		weight: 9,
 		enabled: true,
 	},
+			 {
+		title: "versus0",
+		imgurl: "https://img.542000.xyz/file/friend_avatar/1778931720838_f167cb95af9d881f4378b92b3e181d89_4647054993754934443.jpg",
+		desc: "I may be still unripened.But I'm not afraid.",
+		siteurl: "https://blog.542000.xyz",
+		tags: ["Blog"],
+		weight: 9,
+		enabled: true,
+	},
 ];
 
 // 获取启用的友链并进行排序
