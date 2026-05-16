@@ -68,6 +68,15 @@ export const friendsConfig: FriendLink[] = [
 		weight: 10,
 		enabled: true,
 	},
+			 {
+		title: "Dogxi 的狗窝",
+		imgurl: "https://blog.dogxi.me/avatar.png",
+		desc: "Dogxi 的个人博客，因为热爱所以热爱",
+		siteurl: "https://blog.dogxi.me",
+		tags: ["Blog"],
+		weight: 9,
+		enabled: true,
+	},
 ];
 
 // 获取启用的友链并进行排序
