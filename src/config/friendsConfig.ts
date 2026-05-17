@@ -84,7 +84,16 @@ export const friendsConfig: FriendLink[] = [
 		desc: "I may be still unripened.But I'm not afraid.",
 		siteurl: "https://blog.542000.xyz",
 		tags: ["Blog"],
-		weight: 9,
+		weight: 18,
+		enabled: true,
+	},
+	{
+		title: "二叉树树",
+		imgurl: "https://q2.qlogo.cn/headimg_dl?dst_uin=2726730791&spec=0",
+		desc: "Protect What You Love.",
+		siteurl: "https://2x.nz",
+		tags: ["Blog"],
+		weight: 20,
 		enabled: true,
 	},
 ];
