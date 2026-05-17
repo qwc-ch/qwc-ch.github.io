@@ -16,8 +16,7 @@ export const siteConfig: SiteConfig = {
 	site_url: "https://blog.520781.xyz",
 
 	// 站点描述
-	description:
-		"基于Firefly主题制作的个人博客。",
+	description: "基于Firefly主题制作的个人博客。",
 
 	// 站点关键词
 	keywords: [
@@ -50,7 +49,7 @@ export const siteConfig: SiteConfig = {
 		// 是否开启卡片边框和阴影，开启后让网站更有立体感
 		border: true,
 		// 是否让卡片风格跟随主题色相
-		followTheme:true,
+		followTheme: true,
 	},
 
 	// Favicon 配置

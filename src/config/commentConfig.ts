@@ -45,19 +45,19 @@ export const commentConfig: CommentConfig = {
 	},
 
 	//giscus评论系统配置
-  giscus: {
-  repo: "qwc-ch/Blog-comment-data-storage",
-  repoId: "R_kgDOQSETtQ",
-  category: "Announcements",
-  categoryId: "DIC_kwDOQSETtc4CxmBz",
-  mapping: "pathname",   // 注意从 title 改为 pathname
-  strict: "0",
-  reactionsEnabled: "1",
-  emitMetadata: "0",     // 关闭元数据发送
-  inputPosition: "bottom",
-  lang: "zh-CN",
-  loading: "lazy",       // 或保持 "lazy"，效果接近 async
-},
+	giscus: {
+		repo: "qwc-ch/Blog-comment-data-storage",
+		repoId: "R_kgDOQSETtQ",
+		category: "Announcements",
+		categoryId: "DIC_kwDOQSETtc4CxmBz",
+		mapping: "pathname", // 注意从 title 改为 pathname
+		strict: "0",
+		reactionsEnabled: "1",
+		emitMetadata: "0", // 关闭元数据发送
+		inputPosition: "bottom",
+		lang: "zh-CN",
+		loading: "lazy", // 或保持 "lazy"，效果接近 async
+	},
 
 	//disqus评论系统配置
 	disqus: {

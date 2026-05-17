@@ -50,7 +50,7 @@ export const friendsConfig: FriendLink[] = [
 		weight: 100,
 		enabled: true,
 	},
-		{
+	{
 		title: "团子和蛋糕",
 		imgurl: "https://re.tsh520.cn/zl/tx.webp",
 		desc: "如果你喜欢那么欢迎来到我的世界！",
@@ -59,7 +59,7 @@ export const friendsConfig: FriendLink[] = [
 		weight: 10,
 		enabled: true,
 	},
-			{
+	{
 		title: "UpXuu",
 		imgurl: "https://upxuu.com/images/20260214145619.jpg",
 		desc: "逐光而上",
@@ -68,7 +68,7 @@ export const friendsConfig: FriendLink[] = [
 		weight: 10,
 		enabled: true,
 	},
-			 {
+	{
 		title: "Dogxi 的狗窝",
 		imgurl: "https://blog.dogxi.me/avatar.png",
 		desc: "Dogxi 的个人博客，因为热爱所以热爱",
@@ -77,9 +77,10 @@ export const friendsConfig: FriendLink[] = [
 		weight: 9,
 		enabled: true,
 	},
-			 {
+	{
 		title: "versus0",
-		imgurl: "https://img.542000.xyz/file/friend_avatar/1778931720838_f167cb95af9d881f4378b92b3e181d89_4647054993754934443.jpg",
+		imgurl:
+			"https://img.542000.xyz/file/friend_avatar/1778931720838_f167cb95af9d881f4378b92b3e181d89_4647054993754934443.jpg",
 		desc: "I may be still unripened.But I'm not afraid.",
 		siteurl: "https://blog.542000.xyz",
 		tags: ["Blog"],
