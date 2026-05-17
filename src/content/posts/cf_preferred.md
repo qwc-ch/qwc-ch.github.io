@@ -2,9 +2,9 @@
 title: Cloudflare Worker优选
 published: 2026-04-25
 description: 'Cloudflare Worker优选来让你的网站解析的IP进行分流优选，提高网站可用性和速度'
-image: ''
+image: './images/cfwoker.png'
 tags: [cloudflare,Worker,ip优选]
-category: ''
+category: 'cloudflare'
 draft: false 
 lang: 'zh-CN'
 ---
